@@ -13,6 +13,9 @@ grep -e $regExp $filename
 #Problem 2 Code: Output number of phone numbers
 echo "Number of lines with phone numbers: "
 grep -c '[0-9]\{3\}-[0-9]\{3\}-[0-9]\{4\}' $filename
+#Problem 3 Code: Number of lines with emails
+echo "Number of lines with emails: "
+grep -c "@geocities.com" $filename
 #Problem 3 Code: Print numbers that start with 303
 echo "Phone numbers with the area code (303)"
 grep -o '303-[0-9]\{3\}-[0-9]\{4\}' $filename
